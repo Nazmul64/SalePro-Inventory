@@ -107,6 +107,32 @@
     <!--BS Scripts-->
     <script src="{{asset('backend')}}/js/bootstrap.bundle.min.js"></script>
     <script src="{{asset('backend')}}/js/main.js"></script>
+    <script src="{{asset('backend')}}/js/jquery.min.js"></script>
+    <script src="{{asset('backend')}}/plugins/perfect-scrollbar/js/perfect-scrollbar.js"></script>
+    <script src="{{asset('backend')}}/plugins/metismenu/js/metisMenu.min.js"></script>
+    <script src="{{asset('backend')}}/plugins/simplebar/js/simplebar.min.js"></script>
+    <script src="{{asset('backend')}}/plugins/datatable/js/jquery.dataTables.min.js"></script>
+    <script src="{{asset('backend')}}/plugins/datatable/js/dataTables.bootstrap5.min.js"></script>
+      <script>
+         $(document).ready(function() {
+             $('#example').DataTable();
+           } );
+      </script>
+      <script>
+         $(document).ready(function() {
+             var table = $('#example2').DataTable( {
+                 lengthChange: false,
+                 buttons: [ 'copy', 'excel', 'pdf', 'print']
+             } );
+
+             table.buttons().container()
+                 .appendTo( '#example2_wrapper .col-md-6:eq(0)' );
+         } );
+      </script>
+
+     <!--BS Scripts-->
+     <script src="{{asset('backend')}}/js/bootstrap.bundle.min.js"></script>
+     <script src="{{asset('backend')}}/js/main.js"></script>
   </body>
 
 <!-- Mirrored from codervent.com/roksyn/demo/ltr/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 22 Sep 2024 16:41:02 GMT -->
